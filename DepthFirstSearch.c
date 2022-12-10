@@ -29,6 +29,7 @@ void DepthFirstSearch(char v[], bool a[][SIZE]){
    do{
        for(j=0;j<SIZE;j++){
            if(a[i][j] == 1 && searchOk[j] == false){
+               printf("-> %x",v[j]);
                push(i);
                searchOk[j]=true;
                i=j;
